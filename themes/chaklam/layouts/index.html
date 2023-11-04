@@ -1,0 +1,391 @@
+{{ define "main" }}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-9 text-center">
+        <h1>ChatData</h1>
+        <p style="margin-top: 10px;" class="lead text-muted">เริ่มอัปโหลดข้อมูลของคุณ ไม่ว่าจะเป็น PDF, URLs, JSON, SQL
+          และพูดคุยกับมัน - สำรวจความรู้, ค้นหาวิธีการแก้ปัญหา, ค้นพบความรู้, และอื่น ๆ อีกมากมาย.</p>
+        <p style="margin-top: 10px;" class="lead text-muted">Start uploading your data, let it be PDF, URLs, JSON, SQL
+          and talk with it - explore knowledge, find solutions, discover insights, and much more.</p>
+      </div>
+    </div>
+    <div class="text-center">
+      <a style="background-color: #f38733" href="#contact" class="btn-get-started scrollto">Try now!</a>
+      <a style="background-color: #05220a" href="/demo" class="btn-get-started scrollto">Check out our demos!</a>
+    </div>
+    {{/*  <div style="margin-top: -20px;"></div>  */}}
+    <div id="features">
+      <div class="row icon-boxes">
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-globe" aria-hidden="true"></i> Multilingual Support</a></h4>
+            <p class="description">Support English and Thai. 10+ languages coming soon.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-pencil" aria-hidden="true"></i> Customization</a></h4>
+            <p class="description">Customize prompts, lengths, as well as fine-tuning and reinforcing the models, all
+              through our user-friendly UI.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-table" aria-hidden="true"></i> Data format</a></h4>
+            <p class="description">Supports data in the format of: PDFs, CSVs, URLs, JSON, and SQLs.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px;"></div>
+
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-share-alt" aria-hidden="true"></i> Sharing and API</a></h4>
+            <p class="description">Share your bot with anyone online through a public link, API, or embed forms and
+              design
+              your own customer journey experience.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-list-ol" aria-hidden="true"></i> Rule-Based Support</a></h4>
+            <p class="description">Combines your own predefined rules to make the bot even more powerful. Don't trust
+              your
+              LLM fully!</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-mobile" aria-hidden="true"></i> Mobile Support</a></h4>
+            <p class="description">Integrate with your favourite chat interfaces e.g., LINE, messenger, etc.</p>
+          </div>
+        </div>
+
+        {{/* <div class="col-lg-3 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <h4 class="title"><a href="">Training</a></h4>
+            <p class="description">We offer customized training solutions in the area of AI, deep learning, and
+              human-computer interaction.</p>
+          </div>
+        </div> */}}
+
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Use Cases</h2>
+        <p>This is what you can do</p>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+
+          <div class="portfolio-wrap">
+            <img src="/img/cs.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Customer Support</h4>
+              <p>Provides 24/7 customer support, assisting users with product inquiries, troubleshooting, and order
+                status updates efficiently and accurately.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="/img/qa.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Knowledge base</h4>
+              <p>Serves as a knowledge base over vast amount of documents, delivering quick and reliable answers to user
+                queries.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="/img/interview.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>HR screening / interviewing</h4>
+              <p>Streamlines HR screening and interviewing by conducting initial candidate assessments and answering candidate queries.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="/img/write.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Writing Assistant</h4>
+              <p>Helps users create polished documents by offering grammar checks, style suggestions, and much more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <section id="pricing" class="pricing">
+
+    <div class="container">
+      <div class="section-title">
+        <h2>Pricing</h2>
+        <p>Pay for what you need.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-box mt-4">
+            <i class="mdi mdi-account h1"></i>
+            <h4 class="f-20">Free</h4>
+
+            <div class="mt-4 pt-2">
+
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Input words <b>
+                  < 10k</b>
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Multilingual support
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Customization</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Mobile support</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Sharing</p>
+
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i>Rule-based support</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i>Instruction tuning</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i>Reinforcement learning</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i>API</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i>Faster response time</p>
+            </div>
+
+            {{/* <p class="mt-4 pt-2 text-muted">For everyone.</p> */}}
+            {{/* <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><s> $9.99</s> <span class="plan pl-3 text-dark">$8.99 </span></h4>
+              <p class="text-muted mb-0">Per Month</p>
+            </div> */}}
+            <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><span class="plan pl-3 text-dark">Free </span></h4>
+              <div class="text-muted mb-0">Per Month</div>
+            </div>
+            <div class="mt-4">
+              <a href="" class="btn btn-primary btn-rounded">Get it now.</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-box mt-4">
+            <div class="pricing-badge">
+              <span class="badge">Recommended</span>
+            </div>
+
+            <i class="mdi mdi-account-plus h1 text-primary"></i>
+            <h4 class="f-20 text-primary">Plus</h4>
+
+            <div class="mt-4 pt-2">
+
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Input words <b>
+                  < 100k</b>
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Multilingual support
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Customization</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Mobile support</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Sharing</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger text-success f-18 mr-2"></i>Rule-based support
+              </p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger text-success f-18 mr-2"></i>Instruction tuning
+              </p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger text-success f-18 mr-2"></i>Reinforcement
+                learning</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i>API</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i>Faster response time</p>
+
+            </div>
+
+            <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><span class="plan pl-3 text-dark">฿30 </span></h4>
+              <p class="text-muted mb-0">Per Bot Per Month</p>
+            </div>
+
+            <div class="mt-4">
+              <a href="" class="btn btn-primary btn-rounded">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-box mt-4">
+            <i class="mdi mdi-account-multiple-plus h1"></i>
+            <h4 class="f-20">Pro</h4>
+
+            <div class="mt-4 pt-2">
+
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Input words <b>
+                  < 500k</b>
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Multilingual support
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Customization</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Mobile support</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Sharing</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Rule-based support
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Instruction tuning
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Reinforcement
+                learning</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>API</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Faster response time
+              </p>
+
+            </div>
+
+            <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><span class="plan pl-3 text-dark">฿60 </span></h4>
+              <p class="text-muted mb-0">Per Bot Per Month</p>
+            </div>
+
+            <div class="mt-4">
+              <a href="" class="btn btn-primary btn-rounded">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-box mt-4">
+            <i class="mdi mdi-account-group h1"></i>
+            <h4 class="f-20">Enterprise</h4>
+
+            <div class="mt-4 pt-2">
+
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Input words <b>
+                  unlimited</b></p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Multilingual support
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Customization</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Mobile support</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Sharing</p>
+
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Rule-based support
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Instruction tuning
+              </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Reinforcement
+                learning</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>API</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i>Faster response time
+              </p>
+            </div>
+
+            {{/* <p class="mt-4 pt-2 text-muted">For everyone.</p> */}}
+            {{/* <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><s> $9.99</s> <span class="plan pl-3 text-dark">$8.99 </span></h4>
+              <p class="text-muted mb-0">Per Month</p>
+            </div> */}}
+            <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><span class="plan pl-3 text-dark">On-premise</span></h4>
+              <p class="text-muted mb-0">Unlimited bots</p>
+            </div>
+            <div class="mt-4">
+              <a href="" class="btn btn-primary btn-rounded">Contact us.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ======= Partners Section ======= -->
+  <!-- <section id="clients" class="clients">
+      <div class="container">
+        <div class="section-title">
+          <h2>Partners</h2>
+          <p>Our sponsors.</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="/img/partners/scg.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-sm-2 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="/img/partners/sriraj.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-sm-2 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+            <img src="/img/partners/ait.jpeg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+     -->
+  <!-- End Clients Section -->
+
+
+  <!-- ======= Contact Section ======= -->
+  {{/* <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Feel free to schedule an appointment by calling or emailing.</p>
+      </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 270px;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.977593956777!2d100.61184751472204!3d14.078499990136669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e27f8de68c7f59%3A0xf01923824353270!2sAsian%20Institute%20of%20Technology%20(AIT)!5e0!3m2!1sen!2sth!4v1679621412838!5m2!1sen!2sth"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>58 Moo 9 Phahonyothin Road, Tambon Khlong Nung, Amphoe Khlong Luang</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="info">
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>chaklam@ait.asia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="info">
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>063-310-9191</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section --> */}}
+
+</main><!-- End #main -->
+
+
+{{ end }}

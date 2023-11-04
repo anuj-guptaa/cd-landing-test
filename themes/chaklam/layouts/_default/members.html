@@ -1,0 +1,80 @@
+{{ define "main" }}
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <h2>{{ .Title }}</h2>
+    </div>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <!-- ======= Members Section ======= -->
+  <div style="margin-top: 20px; margin-bottom: 20px " class="container">
+    <p class="lead">Supervisor</p>
+    <div class="row">
+      {{ with ($.Site.GetPage "Supervisor") }}
+        {{ range .Pages }}
+          <div class="col-lg-3">
+            <div class="card flex-row">
+              <img src="{{ .Params.image }}" height="80">
+              <div class="card-body">
+                <a href="http://chaklam.com" target="_blank"><div style="font-size: 14px;" class="card-text">{{ .Title }}</div></a>
+                <div style="font-size: 12px;" class="text-muted">{{ .Params.Project }}</div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+    <p style="margin-top: 20px;" class="lead">Ph.D.</p>
+    <div class="row">
+      {{ with (.Site.GetPage "phd") }}
+        {{ range .Pages }}
+          <div class="col-lg-3">
+            <div class="card flex-row" style="margin-top:10px;">
+              <img src="{{ .Params.image }}" height="80">
+              <div class="card-body">
+                <div style="font-size: 14px;" class="card-text">{{ .Title }}</div>
+                <div style="font-size: 12px;" class="text-muted">{{ .Params.Project }}</div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+    <p style="margin-top: 20px;" class="lead">Master</p>
+    <div class="row">
+      {{ with ($.Site.GetPage "master") }}
+        {{ range .Pages }}
+          <div class="col-lg-3">
+            <div class="card flex-row" style="margin-top:10px;">
+              <img src="{{ .Params.image }}" height="80">
+              <div class="card-body">
+                <div style="font-size: 14px;" class="card-text">{{ .Title }}</div>
+                <div style="font-size: 12px;" class="text-muted">{{ .Params.Project }}</div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+    <p style="margin-top: 20px;" class="lead">Alumni</p>
+    <div class="row">
+      {{ with ($.Site.GetPage "alumni") }}
+        {{ range .Pages }}
+          <div class="col-lg-3">
+            <div class="card flex-row" style="margin-top:10px;">
+              <img src="{{ .Params.image }}" height="83">
+              <div class="card-body">
+                <div style="font-size: 13px;" class="card-text">{{ .Title }}</div>
+                <div style="font-size: 11px;" class="text-muted">{{ .Params.Project }}</div>
+                <div style="font-size: 11px;" class="text-muted">{{ .Params.Work }}</div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+</main>
+{{ end }}

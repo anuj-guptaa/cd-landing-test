@@ -1,0 +1,39 @@
+baseURL = "https://ait-brainlab.github.io/"
+languageCode = "en-us"
+theme = "chaklam"
+publishDir = "docs"
+
+title = "ChatData"
+
+[params]
+    logo = "/img/logo.png"
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+  params = { section='#hero' }
+
+[[menu.main]]
+  name = 'Features'
+  pageRef = '/'
+  weight = 20
+  params = { section='#features' }
+
+[[menu.main]]
+  name = 'Use Cases'
+  pageRef = '/'
+  weight = 30
+  params = { section='#portfolio' }
+
+[[menu.main]]
+  name = 'Pricing'
+  pageRef = '/'
+  weight = 40
+  params = { section='#pricing' }
+
+[taxonomies]
+  role = 'roles'
+
+# https://gohugo.io/getting-started/configuration/

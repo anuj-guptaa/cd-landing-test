@@ -1,0 +1,5 @@
+AIT Brain Lab
+docs
+resources
+*.log
+!.keeps

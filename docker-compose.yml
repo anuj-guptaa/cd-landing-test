@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  dev:
+    platform: linux/x86_64
+    image: akraradets/ait-brainlab.github.io:2.0.0
+    build: 
+      context: .
+      dockerfile: .Dockerfile
+    ports:
+      - 1315:1313
+    volumes:
+      - ./:/home/project
+    # environment:
+    #   - CHOKIDAR_USEPOLLING=true
+    #   - NODE_OPTIONS=--openssl-legacy-provider

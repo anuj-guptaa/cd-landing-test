@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <h2>{{ .Title }}</h2>
+    </div>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-10">
+          
+          <!-- Demo Area -->
+          <div class="col-lg-8">
+            <!-- Show Youtube if iframe exist -->
+            {{ if isset .Params "iframe" }}
+              <div class="ratio ratio-16x9">
+                <iframe src="{{ .Params.iframe }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            {{ end }}
+            <!-- Show App -->
+            {{ if isset .Params "api" }}
+            <div class="mb-3">
+              <form id="fb-render" enctype="multipart/form-data" style="margin-top: 10px;"></form>
+            </div>
+              <script src="/vendor/jquery/jquery.js"></script>
+              <script src="/vendor/jquery/jquery-ui.min.js"></script>
+              <script src="https://formbuilder.online/assets/js/form-render.min.js"></script>
+              <script src="{{ .Params.api }}"></script>
+            {{ end }}
+            {{ if isset .Params "demo_url" }}
+              <div class="card" style="width: 100%;">
+                <img src="{{ .Params.demo_img }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Demo</h5>
+                  <p class="card-text">The demo can be used on https://web-aitgpt.tokyo.cs.ait.ac.th:2000</p>
+                  <a href="https://web-aitgpt.tokyo.cs.ait.ac.th:2000" class="btn btn-primary" target="_blank">Try Demo</a>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Description</strong>: {{ .Params.description }}</li>
+                <li><strong>Authors</strong>: {{ .Params.authors }}</li>
+                <li><strong>Published on</strong>: {{ .Params.publication_date }}</li>
+                <li><strong>Paper URL</strong>: <a href="{{ .Params.paper }}" target="_blank">{{ .Params.paper }}</a></li>
+                <li><strong>Github URL</strong>: <a href="{{ .Params.github }}" target="_blank">{{ .Params.github }}</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+</main>
+{{ end }}
